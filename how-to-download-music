@@ -1,0 +1,14 @@
+sudo apt install python-pip
+sudo apt install python3-pip
+sudo pip install youtube-dl
+
+This is how to download a video from youtube.com
+youtube-dl -F   https://www.youtube.com/watch?v=kOFu6b3w6c0 --no-check-certificate
+choose the video you want
+youtube-dl -f 18  https://www.youtube.com/watch?v=kOFu6b3w6c0 --no-check-certificate
+
+Convert an *.mp4 to *.mp3
+ffmpeg -i video.mp4 audio.mp3
+
+Convert *.mp4 to image  
+ffmpeg -i Beatles-YellowSubmarine.mp4 -vf fps=30 out%d.png
